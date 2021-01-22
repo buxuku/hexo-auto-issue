@@ -1,0 +1,28 @@
+{
+  "name": "hexo-auto-issue",
+  "version": "1.0.0",
+  "description": "hexo plugin auto push post to issue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buxuku/hexo-auto-issue.git"
+  },
+  "keywords": [
+    "hexo",
+    "issue"
+  ],
+  "author": "buxuku <buxuku@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buxuku/hexo-auto-issue/issues"
+  },
+  "homepage": "https://github.com/buxuku/hexo-auto-issue#readme",
+  "dependencies": {
+    "@octokit/rest": "^18.0.12",
+    "moment": "^2.29.1",
+    "nunjucks": "^3.2.2"
+  }
+}
