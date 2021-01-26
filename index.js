@@ -1,3 +1,4 @@
-'use strict';
+const fs = require('fs');
+const path = require('path');
 
-hexo.extend.generator.register('auto-issue', require('./lib/index.js'));
+hexo.extend.console.register('issue', 'auto publish to issue', require('./lib'));
