@@ -68,8 +68,20 @@ run `hexo issue`, then this plug will publish or update your post to github issu
   
 * you can not delete the issue by api. so you should create a new repo for test.
 
-* you should generate a github token for this plug. [generate new token](https://github.com/settings/tokens). if you use this plug by tranvis ci, you should not put your token anywhere in your repo.
+* you should generate a github token for this plug. [generate new token](https://github.com/settings/tokens). if you use this plug by a travis ci, you should not put your token anywhere in your repo.
 you should export it as a environment variable, like `export GITHUB_TOKEN=xxx`;
+  
+  if you use a travis ci (.com), you can add a secret environment variable like this:
+
+```bash
+brew install travis
+travis login --pro --github-token xxxx 
+travis encrypt --pro GITHUB_TOKEN="xxx" --add
+```
+
+#### read more
+
+[encryption-keys/](https://docs.travis-ci.com/user/encryption-keys/)
   
 ### License
 

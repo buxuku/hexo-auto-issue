@@ -71,6 +71,17 @@ skipIssue: true
 * 你需要在这里 [generate new token](https://github.com/settings/tokens) 为插件生成一个token. 如果你是通过tranvis ci工具来使用这个插件,你不应该把这个token放在你仓库的任何地方.
 你应该把它导出为一个环境变量.就像`export GITHUB_TOKEN=xxx`这样.
   
+  如果你使用的是travis ci (.com),你可以通过以下的操作方法来生成一个安全的环境变量
+```bash
+brew install travis
+travis login --pro --github-token xxxx 
+travis encrypt --pro GITHUB_TOKEN="xxx" --add
+```  
+
+#### 了解更多
+
+[encryption-keys/](https://docs.travis-ci.com/user/encryption-keys/)
+
 ### License
 
 MIT
