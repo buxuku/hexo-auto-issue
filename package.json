@@ -1,6 +1,6 @@
 {
   "name": "hexo-auto-issue",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "hexo plugin auto publish post to issue",
   "main": "index.js",
   "scripts": {
