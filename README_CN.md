@@ -31,6 +31,7 @@ auto-issue:
   userAgent: hexo-auto-iissue # 自定义请求头
   sort_by: date # 文章排序 可选data|updated 默认t: data
   withGitalk: true # 如果为true, 将自动生成一个gitalkId的label, 默认: false
+  delay: 2000 # 每次发布的延迟时间,防止被判定为机器人 默认: 2000毫秒
   template:
     title: {{title}} - buxuku's blog  # issue 标题模板 默认: {{title}}
     body: |- # issue 内容模板. 默认: {{ _content }}

@@ -31,6 +31,7 @@ auto-issue:
   userAgent: hexo-auto-iissue # custom userAgent
   sort_by: date # data|updated default: data
   withGitalk: true # if true, will auto build a gitalk id labels. default: false
+  delay: 2000 # delay time for each publish to prevent being judged as a robot. default: 2000 milliseconds
   template:
     title: {{title}} - buxuku's blog  # issue title template default: {{title}}
     body: |- # issue body template. default: {{ _content }}
